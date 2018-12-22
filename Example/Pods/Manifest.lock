@@ -1,0 +1,19 @@
+PODS:
+  - SYZMultipleUIKit (0.1.0):
+    - SYZUIBasekit
+  - SYZUIBasekit (0.1.2)
+
+DEPENDENCIES:
+  - SYZMultipleUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  SYZMultipleUIKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SYZMultipleUIKit: 03413de82aa269b3ac061ca50515983a40cb1021
+  SYZUIBasekit: 91226752a5c3b1653e059e8ffacbcd01e135aace
+
+PODFILE CHECKSUM: a7d3d52abec3d54b3d017401512d59a6be4836e9
+
+COCOAPODS: 1.4.0
