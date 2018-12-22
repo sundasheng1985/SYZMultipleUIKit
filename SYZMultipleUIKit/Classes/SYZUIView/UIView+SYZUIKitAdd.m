@@ -51,6 +51,20 @@
 }
 
 /*
+ controller容器
+ */
+- (UIViewController *)syz_viewController {
+    UIResponder * nextResponder = self.nextResponder;
+    if ([nextResponder isKindOfClass:[UIViewController class]]) {
+        return (UIViewController *)nextResponder;
+    } else if ([nextResponder isKindOfClass:[UIView class]]) {
+        return [((UIView *)nextResponder) syz_viewController];
+    }
+    
+    return nil;
+}
+
+/*
  批量添加subview
  */
 - (void)syz_addSubviews:(NSArray<UIView *> *)subviews {

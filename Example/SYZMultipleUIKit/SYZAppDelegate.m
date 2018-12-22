@@ -7,12 +7,15 @@
 //
 
 #import "SYZAppDelegate.h"
+#import "SYZRootViewController.h"
+#import "SYZNavViewController.h"
 
 @implementation SYZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window.rootViewController = [[SYZNavViewController alloc]initWithRootViewController:[SYZRootViewController new]];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -10,7 +10,8 @@
 #import <SYZMultipleUIKit/SYZMultipleUIKit.h>
 
 @interface SYZViewController ()
-
+/** view */
+@property (nonatomic, strong) UIView *bottomview;
 @end
 
 @implementation SYZViewController
@@ -18,13 +19,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.view addSubview:self.bottomview];
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (UIView *)bottomview{
+    if (!_bottomview) {
+        _bottomview = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+        _bottomview.backgroundColor = [UIColor grayColor];
+    }
+    return _bottomview;
 }
 
 @end

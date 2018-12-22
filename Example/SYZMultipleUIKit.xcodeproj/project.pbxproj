@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1C8E53CF7703FC869439F0D6 /* Pods_SYZMultipleUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A285A4C8DCF5132EDC0ECE /* Pods_SYZMultipleUIKit_Example.framework */; };
+		23DE571821CE7B1400FBEC7C /* SYZBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DE571721CE7B1400FBEC7C /* SYZBottomView.m */; };
+		23DE571B21CE7C1400FBEC7C /* SYZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DE571A21CE7C1400FBEC7C /* SYZRootViewController.m */; };
+		23DE571E21CE7C3200FBEC7C /* SYZNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DE571D21CE7C3200FBEC7C /* SYZNavViewController.m */; };
+		23DE572121CE7D1700FBEC7C /* SYZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DE572021CE7D1700FBEC7C /* SYZFirstViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23DE571621CE7B1400FBEC7C /* SYZBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYZBottomView.h; sourceTree = "<group>"; };
+		23DE571721CE7B1400FBEC7C /* SYZBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYZBottomView.m; sourceTree = "<group>"; };
+		23DE571921CE7C1400FBEC7C /* SYZRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYZRootViewController.h; sourceTree = "<group>"; };
+		23DE571A21CE7C1400FBEC7C /* SYZRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYZRootViewController.m; sourceTree = "<group>"; };
+		23DE571C21CE7C3200FBEC7C /* SYZNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYZNavViewController.h; sourceTree = "<group>"; };
+		23DE571D21CE7C3200FBEC7C /* SYZNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYZNavViewController.m; sourceTree = "<group>"; };
+		23DE571F21CE7D1700FBEC7C /* SYZFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYZFirstViewController.h; sourceTree = "<group>"; };
+		23DE572021CE7D1700FBEC7C /* SYZFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYZFirstViewController.m; sourceTree = "<group>"; };
 		2B4408C5C969E2F56D393F5D /* Pods-SYZMultipleUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYZMultipleUIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYZMultipleUIKit_Tests/Pods-SYZMultipleUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AA68BA04EBEE9D66346CD2A /* SYZMultipleUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SYZMultipleUIKit.podspec; path = ../SYZMultipleUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* SYZMultipleUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYZMultipleUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +160,14 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SYZViewController.h */,
 				6003F5A6195388D20070C39A /* SYZViewController.m */,
+				23DE571921CE7C1400FBEC7C /* SYZRootViewController.h */,
+				23DE571A21CE7C1400FBEC7C /* SYZRootViewController.m */,
+				23DE571F21CE7D1700FBEC7C /* SYZFirstViewController.h */,
+				23DE572021CE7D1700FBEC7C /* SYZFirstViewController.m */,
+				23DE571C21CE7C3200FBEC7C /* SYZNavViewController.h */,
+				23DE571D21CE7C3200FBEC7C /* SYZNavViewController.m */,
+				23DE571621CE7B1400FBEC7C /* SYZBottomView.h */,
+				23DE571721CE7B1400FBEC7C /* SYZBottomView.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -408,8 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DE571821CE7B1400FBEC7C /* SYZBottomView.m in Sources */,
 				6003F59E195388D20070C39A /* SYZAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SYZViewController.m in Sources */,
+				23DE572121CE7D1700FBEC7C /* SYZFirstViewController.m in Sources */,
+				23DE571E21CE7C3200FBEC7C /* SYZNavViewController.m in Sources */,
+				23DE571B21CE7C1400FBEC7C /* SYZRootViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

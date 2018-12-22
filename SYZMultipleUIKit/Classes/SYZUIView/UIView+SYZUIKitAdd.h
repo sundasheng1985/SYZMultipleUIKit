@@ -34,6 +34,11 @@
 - (void)syz_removeGestureRecognizersOfClass:(Class)theClass;
 
 /*
+ controller容器
+ */
+- (UIViewController *)syz_viewController;
+
+/*
  批量添加subview
  */
 - (void)syz_addSubviews:(NSArray<UIView *> *)subviews;
